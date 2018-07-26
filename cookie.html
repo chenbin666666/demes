@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cookie.js</title>
+</head>
+<body>
+<form action="">
+    用户名：<input type="text" name="username" >
+    密码：<input type="password" name="password" >
+</form>
+</body>
+<!--<script src="jquery/jquery.min.js"></script>-->
+<!--<script src="js/jquery.cookie.js"></script>-->
+<script>
+    $.cookie('the_cookie','the_value',{expires:-1})
+    var cb=$.cookie('the_cookie');
+    alert(cb)
+    //js 中的cookie
+
+    var cook=document.cookie
+    alert(cook)
+</script>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    var date=new Date()
+    alert(date)
+//    date.setMonth(4)
+    var time=date.getFullYear()+'-'+(date.getMonth()+1)
+
+    alert(time)
+    //js 中的cookie 不会覆盖  expires代表过期时间
+    document.cookie="use=blue;expires=-1"
+    document.cookie="age=12;expires=-1"
+    alert(document.cookie)
+
+</script>
+</html>
